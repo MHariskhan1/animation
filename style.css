@@ -70,7 +70,7 @@ div:hover {
     width: 300px;
 } */
 /* Transition shorthand */
-div {
+/* div {
     width: 100px;
     transition: width 2s;
     background-color: brown;
@@ -80,6 +80,60 @@ div {
 div:hover {
     width: 300px;
     background-color: blue;
-    background-color: aliceblue;
+} */
 
+/* Animation in css */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+/* @keyframes example {
+    0% {
+        background-color: red;
+        width: 150px;
+    }
+    25% {
+        background-color: yellow;
+        width: 200px;
+    }
+    50% {
+        background-color: brown;
+        width: 250px;
+    }
+    100% {
+        background-color: green;
+        width: 300px;
+    }
+} */
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
